@@ -1,0 +1,26 @@
+// Задание № 1
+
+function numbers(arr) {
+  let even = 0;
+  let odd = 0;
+  let zero = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof arr[i] === 'number') {
+      if (arr[i] === 0) {
+        zero++;
+      } else if (arr[i] % 2 === 0) {
+        even++;
+      } else {
+        odd++;
+      }
+    }
+  }
+
+  console.log(`Чётные: ${even}`);
+  console.log(`Нечётные: ${odd}`);
+  console.log(`Нули: ${zero}`);
+}
+
+let arr = [33, '', 34, 36, null, 4, 3, 0];
+numbers(arr)

@@ -1,0 +1,6 @@
+// Задание № 5
+
+
+const power = (x, n) => x ** n;
+
+console.log(power(5, 2));  
